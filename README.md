@@ -1,12 +1,68 @@
-# React + Vite
+# Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application for converting currencies using live exchange rates from the [Fawaz Ahmed Currency API](https://github.com/fawazahmed0/currency-api).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Convert between any two supported currencies
+- Live exchange rates fetched from a public API
+- Swap currencies with a single click
+- Responsive and modern UI
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Currency Converter Screenshot](screenshot.png) <!-- Add a screenshot if available -->
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v14 or later recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/currency-converter.git
+   cd currency-converter
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Project Structure
+
+```
+src/
+  components/
+    InputBox.jsx
+    index.js
+  hooks/
+    useCurrencyInfo.js
+  App.jsx
+  main.jsx
+public/
+  ...
+```
+
+## How It Works
+
+- The app uses a custom React hook (`useCurrencyInfo`) to fetch exchange rates for the selected base currency.
+- The user can enter an amount, select source and
